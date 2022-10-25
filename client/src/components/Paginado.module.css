@@ -1,0 +1,11 @@
+.button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 10px;
+    border-color: #4CAF50;
+}
+
+.button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
