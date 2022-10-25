@@ -1,9 +1,10 @@
-import axios from "axios"
+
 
 const initialState = {
 	characters : [],
 	allCharacters: [],
-	occupations: []
+	occupations: [],
+	detail: []
 }
 
 function rootReducer (state= initialState, {type , payload}) {
@@ -71,6 +72,12 @@ function rootReducer (state= initialState, {type , payload}) {
 				return {
 					...state,
 					characters: sortedArr
+				}
+			case 'GET_DETAILS' :
+				console.log(payload)
+				return {
+					...state,
+					detail: payload
 				}
 			default: 
 			return state;

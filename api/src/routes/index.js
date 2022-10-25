@@ -10,7 +10,7 @@ const router = Router();
 // Configurar los routers
 // Ejemplo: router.use('/auth', authRouter);
 router.get('/characters', allCharacters)
-router.get('/character/:id', getById)
+router.get('/characters/:id', getById)
 router.get('/occupations', getOccupation)
 router.post('/character', postCharacter)
 module.exports = router;

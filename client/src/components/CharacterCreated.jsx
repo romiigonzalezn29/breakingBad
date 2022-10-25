@@ -54,6 +54,12 @@ export default function CharacterCreate() {
 		 })
 	}
 
+	function handleDelete(el){
+		setInput({
+			...input,
+			occupation: input.occupation.filter( occ => occ !== el)
+		})
+	}
 
 	useEffect(()=> {
 		dispatch(getOccupations());
@@ -135,10 +141,17 @@ export default function CharacterCreate() {
                     <option key={occ.id} value={occ.name} >{occ.name}</option>
                 ))}
              </select>
-             <ul><li>{input.occupation.map(el => el + ", ")}</li></ul>
-			  <button type='submit'>Crear personaje</button>
+			 <br/>
+			 <button type='submit'>Crear personaje</button>
+			 </form>
+             {input.occupation?.map(el=> 
+				<div key={el.id}>
+					<p>{el}</p>
+					<button onClick={()=> handleDelete(el)}>X</button>
+				</div>)}
+			  
 			 
-		</form>
+		
 		 </div>
 
 		)

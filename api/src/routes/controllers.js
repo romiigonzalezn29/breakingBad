@@ -16,6 +16,7 @@ const getApiInfo = async() => {
             birthday: c.birthday,
             nickname: c.nickname,
             status: c.status,
+            occupation: c.occupation,
             img: c.img
 
         }
@@ -61,22 +62,27 @@ const allCharacters = async (req,res) => {
 }
 
 const getById = async(req,res) => {
-    const { id } = req.params.id;
+    
+try {
+    const { id } = req.params;
+    
     if(Number(id) === NaN) {
         const dbId = await Character.findByPk(id);
+        
         res.status(200).send(dbId);
 
     } else {
         const getApi = await getAllCharacters()
-        const apiId = getApi.find(e => e.id == id )
+        
+        const apiId = getApi.find((e) => e.id == id )
+        console.log(apiId)
         res.status(200).send(apiId)
     }
+    } catch (error) {
+        console.log(error)
+    }
 }
-try {
-    
-} catch (error) {
-    
-}
+
 const getOccupation = async(req, res) => { 
     const occupationApi = await axios.get('https://breakingbadapi.com/api/characters');
     const occupations = occupationApi.data.map(el => el.occupation)
