@@ -10,7 +10,13 @@
     background-color: #4CAF50; /* Green */
     color: white;
 }
-
+.navBar{
+    display: flex;
+    justify-content: space-around
+}
+.paginado{
+    display: inline;
+}
 .title{
     color: #317633;
      ;

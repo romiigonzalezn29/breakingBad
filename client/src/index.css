@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale; 
   width: 100%;
   height: 100vh;
-  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6714389f-c086-4b1b-b5bc-ded723baa1d2/d7fnpwd-950725e7-a8d9-49a5-84fd-ca8bb1c44c37.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sIm9iaiI6W1t7InBhdGgiOiIvZi82NzE0Mzg5Zi1jMDg2LTRiMWItYjViYy1kZWQ3MjNiYWExZDIvZDdmbnB3ZC05NTA3MjVlNy1hOGQ5LTQ5YTUtODRmZC1jYThiYjFjNDRjMzcucG5nIn1dXX0.8rTx3kvT57gYtuEHZgRUfwE69Dcl1g1a36xyKcO_wOY)
+  background-color: white;
 }
 
 code {

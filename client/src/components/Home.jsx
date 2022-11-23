@@ -46,19 +46,31 @@ export default function Home () {
     }
     return (
         <div>
+            <div>
+           <img src="https://www.teleadhesivo.com/es/img/asfs583-jpg/folder/products-listado-merchanthover/pegatinas-coches-motos-breaking-bad-logo.jpg" width="150px" height="150px"/>
+           </div>
+           <nav className={style.navBar}>
+
+           <div>
             <Link to = '/character'>
                 <button className={style.button}>
                     Crear Personaje
                 </button>
             </Link>
-            <h3 className={style.title}> Home</h3>
-            <button className={style.button} onClick={e=> {handleClick(e)}}>Recargar personajes</button>
-            <SearchBar/>
+            </div>
             <div>
+            <button className={style.button} onClick={e=> {handleClick(e)}}>Recargar personajes</button>
+            </div>
+            <div>
+            <SearchBar/>
+            </div>
+             <div>
                 <select className={style.select} onChange={e=> handleName(e)}>
                     <option value='asc'>Ascendente</option>
                     <option value='des'>Descendente</option>
                 </select>
+               </div>
+               <div>
                 <select className={style.select} onChange={e=> handleStatus(e)}>
                     <option value='All'>Todos</option>
                     <option value='Alive'>Vivo</option>
@@ -66,21 +78,31 @@ export default function Home () {
                     <option value='Unknown'>Desconocido</option>
                     <option value='Presumed dead'>Probablemente muerto</option>
                 </select>
+                </div>
+                <div>
                 <select className={style.select} onChange={e=> handleCreated(e)}>
                     <option value='All'>Todos</option>
                     <option value='created'>Creados</option>
                     <option value='api'>Existente</option>
                 </select>
+                </div>
+                
+                
+                
+               
+                </nav>
+                <div className={style.paginado}>
                 <Paginado
                 charatersPerPage={charactersPerPage}
                 allCharacters={allCharacters.length}
                 paginado = {paginado} />
+                 </div>
                 <div className={s.card}>
                 {
                     currentCharacters?.map((c)=> {
                         return (
                             <div  key={c.id}>
-                                <Link to={'/home/' + c.id}>
+                                <Link to={'/characters/' + c.id}>
                                     <Card name={c.name} img={c.img} nickname={c.nickname}/>
                                 </Link>
                             </div>
@@ -89,7 +111,7 @@ export default function Home () {
                 }
                 </div>
             </div>
-        </div>
+        
 
     )
 }

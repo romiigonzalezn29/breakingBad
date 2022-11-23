@@ -1,16 +1,19 @@
 .card {
+    
     display: grid;
-    grid-template-columns: repeat(auto-fill,400px);
+    grid-template-columns: repeat(auto-fill,350px);
    /*  width: 200px;
     height: 200px; */
     border: 100px;
     padding: 10px;
     margin: 20px;
     font-size: 20px;  
+    justify-content: space-between;
   
 }
 .cardC{
-    border: 300px;
+    display: sub-grid;
+    border: 30px;
     margin: 30px;
     padding: 10px;
     /* display: flex;

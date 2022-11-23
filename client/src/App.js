@@ -16,9 +16,9 @@ function App() {
       <Switch> 
 
       <Route exact path= "/" component= {LandingPage}/> 
-      <Route path= '/home' component={Home}/>
-      <Route path= '/character' component={CharacterCreated}/>
-      <Route path="/home/:id" component={CharacterDetail}/>
+      <Route exact path= '/home' component={Home}/>
+      <Route exact path= '/character' component={CharacterCreated}/>
+      <Route exact path="/characters/:id" component={CharacterDetail}/>
       </Switch>
     </div>
     </BrowserRouter>

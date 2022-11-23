@@ -25,6 +25,7 @@ const getApiInfo = async() => {
     
 }
 
+
 const getDbInfo = async () => {
     return await Character.findAll({
         include:{
