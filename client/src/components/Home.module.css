@@ -72,9 +72,14 @@
    .select option {
     font-weight:normal;
    }
+
+
    .card{
     background-color: rgb(245, 249, 249);
     margin: 20px;
     padding-bottom: 30px;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(145, 145, 145);
+    border-radius: 1%;
    }
+
+   

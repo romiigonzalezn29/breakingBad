@@ -1,0 +1,52 @@
+.img{
+    width: 400px;
+    height: 500px;
+    border-radius: 1%;
+    margin-top: 2px;
+    margin-left: 2px;
+    border:  1px solid rgb(145, 145, 145);
+}
+
+.div{
+    display: inline-flex;
+    flex-direction: row;
+    margin: 20px ;
+    justify-content: left;
+    background-color: rgb(240, 245, 245);
+    border-radius: 1%;
+    border:  1px solid rgb(145, 145, 145);
+}
+
+.info{
+    
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 20px;
+   
+}
+
+.descripcion{
+    margin-top: 100px;
+}
+.espacioBoton{
+    margin-top: 100px;
+}
+.button {
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    padding: 10px;
+    border: 10px #aaa;
+    background-color: rgb(32, 32, 32);
+    color: #ffffff;
+}
+
+.button:hover {
+    background-color: rgb(32, 32, 32);
+    color: rgb(183, 178, 178);
+    border: 10px #aaa;
+    padding: 10px;
+}
+.cargando{
+    width: 300px;
+    height: 300px;
+}

@@ -102,7 +102,7 @@ export default function Home () {
                                
                                     <Card name={c.name} img={c.img} nickname={c.nickname}/>
                                     <Link to={'/characters/' + c.id}>
-                                        <button>Mas info</button>
+                                        <button className={style.button}>Informacion</button>
                                 </Link>
                             </div>
                         )
