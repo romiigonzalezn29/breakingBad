@@ -26,21 +26,21 @@
     min-height: 400px;
     font-size:30px;   */
     border-radius: 30px;
-    background-color: rgba(186, 186, 30, 0.575);
+    
     
 }
 
 .title{
     
     font-family: 'Arial', sans-serif;
-    color:white;
-    background-color: rgba(2, 114, 2, 0.674);
+    color:rgb(0, 0, 0);
+    background-color:  rgb(255, 255, 255);
     
     font-size: 25px;
     -webkit-text-stroke: 0,7px black;
-    border: 2px white solid ;
+    border: 2px rgb(0, 0, 0) solid ;
 }
 
 .img{
-    border-radius: 20px;
+    border: 2px rgb(0, 0, 0) solid ;
 }

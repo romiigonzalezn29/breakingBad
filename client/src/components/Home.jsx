@@ -46,9 +46,8 @@ export default function Home () {
     }
     return (
         <div>
-            <div>
-           <img src="https://www.teleadhesivo.com/es/img/asfs583-jpg/folder/products-listado-merchanthover/pegatinas-coches-motos-breaking-bad-logo.jpg" width="150px" height="150px"/>
-           </div>
+           
+           <div className={style.bloqueSuperior}>
            <nav className={style.navBar}>
 
            <div>
@@ -87,9 +86,6 @@ export default function Home () {
                 </select>
                 </div>
                 
-                
-                
-               
                 </nav>
                 <div className={style.paginado}>
                 <Paginado
@@ -97,13 +93,16 @@ export default function Home () {
                 allCharacters={allCharacters.length}
                 paginado = {paginado} />
                  </div>
+                 </div> 
                 <div className={s.card}>
                 {
                     currentCharacters?.map((c)=> {
                         return (
-                            <div  key={c.id}>
-                                <Link to={'/characters/' + c.id}>
+                            <div  className={style.card} key={c.id}>
+                               
                                     <Card name={c.name} img={c.img} nickname={c.nickname}/>
+                                    <Link to={'/characters/' + c.id}>
+                                        <button>Mas info</button>
                                 </Link>
                             </div>
                         )

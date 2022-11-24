@@ -1,11 +1,16 @@
-.button {
-    -webkit-transition-duration: 0.4s; /* Safari */
+ 
+   .button {
+    -webkit-transition-duration: 0.4s; 
     transition-duration: 0.4s;
-    border-radius: 10px;
-    border-color: #4CAF50;
+    padding: 10px;
+    border: 10px #aaa;
+    background-color: rgb(32, 32, 32);
+    color: #ffffff;
 }
 
 .button:hover {
-    background-color: #4CAF50; /* Green */
-    color: white;
+    background-color: rgb(32, 32, 32);
+    color: rgb(183, 178, 178);
+    border: 10px #aaa;
+    padding: 10px;
 }

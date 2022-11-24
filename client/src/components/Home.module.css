@@ -1,14 +1,22 @@
-
+ 
    .button {
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s; 
     transition-duration: 0.4s;
-    border-radius: 30px;
-    border-color: #4CAF50;
+    padding: 10px;
+    border: 10px #aaa;
+    background-color: rgb(32, 32, 32);
+    color: #ffffff;
 }
 
 .button:hover {
-    background-color: #4CAF50; /* Green */
-    color: white;
+    background-color: rgb(32, 32, 32);
+    color: rgb(183, 178, 178);
+    border: 10px #aaa;
+    padding: 10px;
+}
+.bloqueSuperior{
+    background-color: rgb(32, 32, 32);
+   padding: 5px;
 }
 .navBar{
     display: flex;
@@ -63,4 +71,10 @@
    }
    .select option {
     font-weight:normal;
+   }
+   .card{
+    background-color: rgb(245, 249, 249);
+    margin: 20px;
+    padding-bottom: 30px;
+    border: 1px solid rgb(0, 0, 0);
    }
